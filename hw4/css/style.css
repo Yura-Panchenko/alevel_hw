@@ -1,0 +1,330 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: #000;
+  -webkit-box-shadow: 2px 0 10px #cecece;
+          box-shadow: 2px 0 10px #cecece;
+}
+
+header ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+header ul a:hover {
+  color: #cecece;
+}
+
+.level-1 {
+  background: #0d5825;
+}
+
+.level-1 blockquote {
+  width: 100%;
+  margin: 0;
+  margin-top: 150px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+}
+
+.level-1 blockquote p::before {
+  content: '\201C';
+  margin: 0 5px;
+}
+
+.level-1 blockquote p::after {
+  content: '\201D';
+  margin: 0 5px;
+}
+
+.level-1 img {
+  width: 150px;
+  position: absolute;
+  -webkit-transition: margin-top .5s;
+  transition: margin-top .5s;
+}
+
+.level-1 img:hover {
+  margin-top: -30px;
+}
+
+.level-1 .card-1 {
+  left: 49%;
+  top: 45%;
+  z-index: 2;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.level-1 .card-2 {
+  left: 46%;
+  top: 43%;
+  z-index: 1;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.level-1 .card-3 {
+  left: 43%;
+  top: 42%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.level-2 {
+  background: #d8fbff;
+}
+
+.level-2 .container {
+  position: relative;
+  padding: 200px;
+}
+
+.level-2 .container .box {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.level-2 .container .box1 {
+  background: #ff8888;
+}
+
+.level-2 .container .box2 {
+  background: #7e8aeb;
+  left: 325px;
+  top: 325px;
+  z-index: 1;
+}
+
+.level-2 .container .box3 {
+  background: #4def99;
+  left: 450px;
+  top: 450px;
+}
+
+.level-3 {
+  position: relative;
+  background: #cecece;
+}
+
+.level-3 .menu {
+  position: absolute;
+  z-index: 2;
+  width: 300px;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  right: 0;
+  background: #888;
+  padding: 100px 50px;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 2;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.level-3 .menu:hover {
+  left: 0;
+}
+
+.level-3 .menu a:hover {
+  color: #ddb500;
+}
+
+.level-3 .menu-here {
+  background: #888;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.level-3 .menu-here:hover ~ nav {
+  left: 0;
+}
+
+.level-3 .menu-here:hover {
+  left: 300px;
+  opacity: 0;
+}
+
+.level-3 .menu-here p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+}
+
+.level-3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.level-3 ul li::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #ddb500;
+  border: 1px solid #000;
+}
+
+.level-4 {
+  padding: 200px;
+  background: #dbc5ff;
+}
+
+.level-4 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.level-4 .container .col {
+  width: 33.2%;
+  position: relative;
+}
+
+.level-4 .container .col:nth-child(2) {
+  width: 500px;
+  height: 500px;
+  margin: 0 25px;
+  background: #fff;
+  -webkit-box-shadow: inset 0 0 10px #333;
+          box-shadow: inset 0 0 10px #333;
+}
+
+.level-4 .container .col img {
+  max-width: 100%;
+}
+
+.level-4 .kubik {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 10px;
+  top: 10px;
+  background: red;
+  -webkit-animation: perimeter 4s infinite;
+          animation: perimeter 4s infinite;
+}
+
+@-webkit-keyframes perimeter {
+  25% {
+    left: 10px;
+    top: calc(100% - 110px);
+    background: blue;
+  }
+  50% {
+    left: calc(100% - 110px);
+    top: calc(100% - 110px);
+    background: green;
+  }
+  75% {
+    left: calc(100% - 110px);
+    top: 10px;
+    background: yellow;
+  }
+  100% {
+    left: 10px;
+    top: 10px;
+    background: red;
+  }
+}
+
+@keyframes perimeter {
+  25% {
+    left: 10px;
+    top: calc(100% - 110px);
+    background: blue;
+  }
+  50% {
+    left: calc(100% - 110px);
+    top: calc(100% - 110px);
+    background: green;
+  }
+  75% {
+    left: calc(100% - 110px);
+    top: 10px;
+    background: yellow;
+  }
+  100% {
+    left: 10px;
+    top: 10px;
+    background: red;
+  }
+}
+
+footer {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #cecece;
+  background: #000;
+  -webkit-box-shadow: -2px 0 10px #cecece;
+          box-shadow: -2px 0 10px #cecece;
+}
+/*# sourceMappingURL=style.css.map */

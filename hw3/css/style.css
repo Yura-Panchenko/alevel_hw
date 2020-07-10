@@ -1,0 +1,24 @@
+.second_level {
+    width: 350px;
+    height: 220px;
+    padding: 15px 10px 20px;
+    margin-bottom: 30px;
+    border: 2px dotted #f00;
+    background: green;
+}
+.third_level {
+    width: 700px;
+}
+.first_img {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+p {
+    text-align: justify;
+}
+.second_img {
+    width: 200px;
+    float: right;
+    margin: 33px 0 25px 35px;
+}

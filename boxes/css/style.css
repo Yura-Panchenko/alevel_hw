@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'OptimaLt';
+  src: url(../fonts/OptimaLt-Bold.ttf) format("ttf");
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+main .container {
+  width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .box {
+  color: #fff;
+  position: relative;
+}
+
+main .container .box:first-child {
+  background: #404040;
+  padding: 32px 45px 32px 140px;
+}
+
+main .container .box:nth-child(2) {
+  background: #f74c55;
+  padding: 32px 50px;
+}
+
+main .container .box:last-child {
+  background: #2d5f3b;
+  padding: 32px 140px 32px 45px;
+}
+
+main .container .box .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+}
+
+main .container .box .title img {
+  width: 27px;
+  margin-right: 18px;
+}
+
+main .container .box .title h2 {
+  font-weight: 400;
+}
+
+main .container .box .plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .container .box .plus p {
+  width: 35px;
+  height: 32px;
+  font-size: 34px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 7px 8px;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
